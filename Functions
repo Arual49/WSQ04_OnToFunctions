@@ -1,0 +1,38 @@
+x=0
+y=0
+
+def addition ():
+	adding =(x+y)
+	print ("The sum would be: " + str(adding))
+def resting ():	
+	resting =(x-y)
+	print ("The rest would be: " + str(resting))
+def multiply ():
+	multiplying =(x*y)
+	print ("The product would be: " + str(multiplying))
+def dividing ():
+	divide =(x//y)
+	rest =(x%y)
+	print ("The division would be: " + str(divide))
+	print ("The remainder would be: " + str(rest))
+	
+operation = input ("Welcome! What do you want to do? sum? rest? multiply? divide? ")
+
+if operation == ("sum") :
+	x = int (input("Number 1: "))
+	y = int (input("Number 2: "))
+	addition()
+elif operation == ("rest") :
+	x = int (input("Number 1: "))
+	y = int (input("Number 2: "))
+	resting()
+elif operation == ("multiply") :
+	x = int (input("Number 1: "))
+	y = int (input("Number 2: "))
+	multiply()
+elif operation == ("divide") :
+	x = int (input("Number 1: "))
+	y = int (input("Number 2: "))
+	dividing()
+elif ValueError:
+	print ("Sorry there was an error with the input. Try again!")
